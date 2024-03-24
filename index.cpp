@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     int size;
-    double BFL_p, BFL_M_0, BFL_M_C;
+    double BFL_p, BFL_M_0, BFL_M_C,BFL_M;
     vector<double> c;
     vector<double> n;
     vector<double> d;
@@ -126,6 +126,12 @@ int main() {
             U = U_;
         }
     }
-    
+    if(c[size-1]==0){
+        BFL_M= BFL_M_0;
+    } else{
+        BFL_M= BFL_M_C;
+    }
+    double SA= BFL_M-BFL_p;
+    cout<<"Spherical Abberation of the lens system is: "<<SA<<endl;
     return 0;
 }
