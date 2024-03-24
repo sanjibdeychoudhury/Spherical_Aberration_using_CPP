@@ -51,7 +51,7 @@ int main() {
         if (a == (size - 1)) {
             double u0 = u_;
             double y0 = y;
-            BFL_p = y0 / u0;
+            BFL_p = -(y0 / u0);
         }
         cout<<"Data Generated for "<<a+1<<"th plane:"<<endl;
         cout<<"y="<<y<<endl;
